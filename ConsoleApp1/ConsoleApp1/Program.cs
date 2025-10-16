@@ -1,23 +1,21 @@
 ﻿using System;
 using System.ComponentModel;
-namespace RectangleArea
+namespace EuroToDollar
 {
     public class Program
     {
         public static void Main()
         {
-            //The user is prompted to input the width and height of a rectangle.
-            const string Input_Width = "Enter the width of the rectangle:";
-            const string Input_Height = "Enter the height of the rectangle:";
-            const string Result = "The area of the rectangle is:";
-            double width,height,area;
-            Console.WriteLine(Input_Width);
-            width = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Input_Height);
-            height = Convert.ToInt32(Console.ReadLine());
-            area = (width*height);
-            Console.WriteLine(Result, area);
-            // 'area' contains the product of 'width' and 'height', and it is displayed.
+            //The user is prompted to input an amount in euros.
+            const double ExchangeRate = 1.12;
+            const string Input = "Enter amount in euros:";
+            const string Result = "Amount in dollars:";
+            double euros,dollars;
+            Console.WriteLine(Input);
+            euros = Convert.ToDouble(Console.ReadLine());
+            dollars = (euros*ExchangeRate);
+            Console.WriteLine(Result, dollars);
+            // 'dollars' contains the converted amount, and it is displayed.
 
 
 
