@@ -1,21 +1,26 @@
 ﻿using System;
 using System.ComponentModel;
-namespace EuroToDollar
+namespace AverageThreeNumbers
 {
     public class Program
     {
         public static void Main()
         {
-            //The user is prompted to input an amount in euros.
-            const double ExchangeRate = 1.12;
-            const string Input = "Enter amount in euros:";
-            const string Result = "Amount in dollars:";
-            double euros,dollars;
-            Console.WriteLine(Input);
-            euros = Convert.ToDouble(Console.ReadLine());
-            dollars = (euros*ExchangeRate);
-            Console.WriteLine(Result, dollars);
-            // 'dollars' contains the converted amount, and it is displayed.
+            //The user is prompted to input three real numbers.
+            const string Input1 = "Enter the first number:";
+            const string Input2 = "Enter the second number:";
+            const string Input3 = "Enter the third number:";
+            const string Result = "The average is:";
+            double num1,num2,num3,average;
+            Console.WriteLine(Input1);
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(Input1);
+            num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(Input1);
+            num3 = Convert.ToDouble(Console.ReadLine());
+            average = (num1+num2+num3)/3;
+            Console.WriteLine(Result, average);
+            // 'average' contains the arithmetic mean of the three numbers, and it is displayed.
 
 
 
